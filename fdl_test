@@ -1,0 +1,14 @@
+functions:
+  oscar:
+    - oscar-cluster:
+        name: tgi-test8
+        image: adrian033/test-tgi:1.4
+        cpu: '0.5'
+        memory: 2Gi
+        script: /home/ayuda112/temp/TFT/test3/worker-runpod-tgi/entrypoint.sh
+        expose:
+          min_scale: 1
+          max_scale: 1
+          api_port: 80
+          cpu_threshold: 90
+          rewrite_target: true
