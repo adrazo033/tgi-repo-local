@@ -5,7 +5,7 @@ functions:
         image: adrian033/test-tgi:1.4
         cpu: '0.5'
         memory: 2Gi
-        script: /home/ayuda112/temp/TFT/test3/worker-runpod-tgi/entrypoint.sh
+        script: entrypoint.sh
         expose:
           min_scale: 1
           max_scale: 1
